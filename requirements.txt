@@ -1,0 +1,4 @@
+langchain>=0.1.13
+langchain-community>=0.0.24
+ollama>=0.1.7
+setuptools>=68.0.0
