@@ -20,38 +20,42 @@ PromptQL/
 └── README.md # Documentation
 
 
-## Installation  
+## Installation
 
-Clone the repository and install dependencies:  
+Clone the repository and install dependencies:
 
-```bash
 git clone https://github.com/jianyang21/PromptQL.git
 cd PromptQL
 pip install -r requirements.txt
-
 Usage
+1. Create and activate a virtual environment
+Windows
 
-Run the CLI tool:
+# Windows
+py -m venv .venv
+.venv\Scripts\activate
 
-python cli.py
+# macOS / Linux
+python3 -m venv .venv
+source .venv/bin/activate
 
 
-Then type a natural language query, for example:
+Go to Command Prompt
+pip install -e .
 
-Show me all employees earning more than 5000
+Run the CLI Tool
+PromptQL "Show me all employees earning more than 5000"
 
-
-Output (SQL):
-
+Example SQL Output
 SELECT * FROM employees WHERE salary > 5000;
 
-Or, if configured for MongoDB:
 
+Example NoSQL Output
 { "salary": { "$gt": 5000 } }
 
-Tech Stack
 
-1)Python 3.10+
-2)NLP models
-3)LangChain or Ollama (optional) for enhanced query parsing
-4)SQL and NoSQL dialect support
+Tech Stack
+1. Python 3.10+
+2. NLP models
+3. LangChain and/or Ollama (optional) for enhanced query parsing
+4. SQL and NoSQL dialect support
