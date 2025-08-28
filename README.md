@@ -52,6 +52,6 @@ Or, if configured for MongoDB:
 Tech Stack
 
 1)Python 3.10+
-2)NLP models (spaCy, transformers, or LLMs)
+2)NLP models
 3)LangChain or Ollama (optional) for enhanced query parsing
 4)SQL and NoSQL dialect support
